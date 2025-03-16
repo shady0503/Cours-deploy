@@ -373,3 +373,6 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
     </div>
   );
 });
+
+CourseDetailsPage.displayName = "CourseDetailsPage";
+
