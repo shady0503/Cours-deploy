@@ -27,9 +27,9 @@ const MinimalFooter = () => {
             écrivez-nous sur WhatsApp
           </Link>
           &nbsp;ou téléphonez-nous au&nbsp;
-          <a href="tel:0669498768" className="underline hover:text-gray-200">
+          <Link href="tel:0669498768" className="underline hover:text-gray-200">
             06 69 49 87 68
-          </a>
+          </Link>
         </p>
 
         {/* Social icons */}

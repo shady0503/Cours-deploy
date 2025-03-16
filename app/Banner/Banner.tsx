@@ -1,5 +1,8 @@
 "use client"
 
+import Image from "next/image";
+import Link from "next/link";
+
 
 
 const Banner = () => {
@@ -25,7 +28,14 @@ const Banner = () => {
                             <div className='bannerBorder sm:pl-8'>
                                 <div className='flex justify-center sm:justify-start'>
                                     <h3 className='text-2xl font-semibold mr-2'>4.6</h3>
-                                    <img src={'/assets/banner/Stars.svg'} alt="stars-icon" />
+                                    <div className="relative w-24 h-6">
+                                        <Image
+                                            src='/assets/banner/Stars.svg'
+                                            alt="stars-icon"
+                                            fill
+                                            style={{ objectFit: 'contain' }}
+                                        />
+                                    </div>
                                 </div>
                                 <div>
                                     <h3 className='text-sm'>Rated by 25k on google.</h3>
@@ -38,18 +48,18 @@ const Banner = () => {
                     {/* DROPDOWN BUTTONS */}
 
                     <div className="flex flex-col sm:flex-row justify-center mt-10 gap-4">
-                        <a 
+                        <Link
                             href="/#about-section" 
                             className="px-8 py-3 text-base font-medium text-white bg-purple rounded-lg hover:bg-purple-700 transition-colors"
                         >
                             About Us
-                        </a>
-                        <a 
+                        </Link>
+                        <Link
                             href="/#contact-section" 
                             className="px-8 py-3 text-base font-medium text-purple border border-purple rounded-lg hover:bg-purple hover:text-white transition-colors"
                         >
                             Get in Touch
-                        </a>
+                        </Link>
                     </div>
                     {/* <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 bg-white rounded-lg boxshadow">
                         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">

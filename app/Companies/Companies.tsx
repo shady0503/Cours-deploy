@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
 
@@ -79,8 +80,8 @@ export default class MultipleItems extends Component {
                     <div>
                         <Slider {...settings}>
                             {data.map((item, i) =>
-                                <div key={i}>
-                                    <img src={item.imgSrc} alt={item.imgSrc} />
+                                <div key={i} className="relative w-[200px] h-[100px]">
+                                    <Image src={item.imgSrc} alt={item.imgSrc} fill className="object-contain" priority />
                                 </div>
                             )}
                         </Slider>

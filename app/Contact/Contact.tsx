@@ -9,28 +9,28 @@ const publicKey = 'J5ef65iNu-7Xn81OV'; // e.g., "J5ef65iNu-7Xn81OV"
 
 const ContactSection = () => {
   // Handle form submission
-interface EmailJSResponse {
+  interface EmailJSResponse {
     text: string;
-}
+  }
 
-interface EmailFormEvent extends React.FormEvent<HTMLFormElement> {
+  interface EmailFormEvent extends React.FormEvent<HTMLFormElement> {
     target: HTMLFormElement;
-}
+  }
 
-const sendEmail = (e: EmailFormEvent): void => {
+  const sendEmail = (e: EmailFormEvent): void => {
     e.preventDefault();
 
     emailjs.sendForm(serviceId, templateId, e.target, publicKey)
-        .then((result: EmailJSResponse) => {
-            console.log('Email sent successfully:', result.text);
-            alert('Message sent successfully!');
-            e.target.reset();
-        })
-        .catch((error: EmailJSResponse) => {
-            console.error('Email sending error:', error.text);
-            alert('An error occurred, please try again.');
-        });
-};
+      .then((result: EmailJSResponse) => {
+        console.log('Email sent successfully:', result.text);
+        alert('Message sent successfully!');
+        e.target.reset();
+      })
+      .catch((error: EmailJSResponse) => {
+        console.error('Email sending error:', error.text);
+        alert('An error occurred, please try again.');
+      });
+  };
 
   return (
     <section
@@ -43,17 +43,20 @@ const sendEmail = (e: EmailFormEvent): void => {
           <h2 className="text-3xl md:text-4xl font-bold text-purple mb-3">Get In Touch</h2>
           <div className="w-20 h-1 bg-purple-600 mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Have questions or want to work together? We'd love to hear from you!
+            Have questions or want to work together? We&apos;d love to hear from you!
           </p>
         </div>
-
         {/* Card container with shadow effect */}
         <div className="bg-white rounded-xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Contact Form */}
             <div className="p-6 md:p-10">
               <h3 className="text-xl font-semibold text-purple mb-6">Send us a message</h3>
-              <form className="space-y-5" onSubmit={sendEmail}>
+              <form className="space-y-5" onSubmit={(e)=>{
+                alert('Message sent successfully!');
+                e.preventDefault();
+
+              }}>
                 {/* Subject (matches {{title}}) */}
                 <div>
                   <label

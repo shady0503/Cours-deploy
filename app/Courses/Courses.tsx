@@ -3,6 +3,7 @@ import * as React from "react";
 import { useState } from "react";
 import { GlobeAltIcon, DevicePhoneMobileIcon, CircleStackIcon, CloudIcon } from '@heroicons/react/24/outline';
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 
 interface Name {
@@ -174,12 +175,24 @@ const NamesList = () => {
                 <div className='flex justify-between border-solid border-2 border-grey500 rounded-md p-2'>
                     <p>12 Classes</p>
                     <div className='flex flex-row space-x-4'>
-                        <div className='flex'>
-                            <img src={'/assets/courses/account.svg'} alt="circle" />
+                        <div className='flex items-center'>
+                            <Image
+                                src='/assets/courses/account.svg'
+                                alt="circle"
+                                width={20}
+                                height={20}
+                                className="w-auto h-auto"
+                            />
                             <p className='text-lightgrey ml-1'>120</p>
                         </div>
-                        <div className='flex'>
-                            <img src={'/assets/courses/Star.svg'} alt="star" />
+                        <div className='flex items-center'>
+                            <Image
+                                src='/assets/courses/Star.svg'
+                                alt="star"
+                                width={20}
+                                height={20}
+                                className="w-auto h-auto"
+                            />
                             <p className='ml-1'>4.5</p>
                         </div>
                     </div>

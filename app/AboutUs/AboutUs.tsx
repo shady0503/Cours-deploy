@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React, { useState } from "react";
 
 const AboutUs: React.FC = () => {
@@ -25,9 +26,9 @@ const AboutUs: React.FC = () => {
             We ignite curiosity and build the future by teaching children and adolescents the wonders of technology.
           </p>
           <div className="mt-10">
-            <a href="#courses-section" className="inline-block bg-green text-white py-3 px-6 rounded-md text-lg">
+            <Link href="#courses-section" className="inline-block bg-green text-white py-3 px-6 rounded-md text-lg">
               View Our Courses
-            </a>
+            </Link>
           </div>
         </div>
         {/* Decorative Animated Blob */}

@@ -1,5 +1,7 @@
 // MENTORS DATA
 
+import Link from "next/link";
+
 interface Product {
     id: number;
     name: string;
@@ -82,10 +84,10 @@ const Mentor = () => {
                                 <div>
                                     <div className='border border-white rounded-lg -mt-8 bg-white p-2 mentorShadow'>
                                         <h3 className="text-sm text-gray-700 text-center">
-                                            <a href={product.href}>
+                                            <Link href={product.href}>
                                                 <span aria-hidden="true" className="absolute inset-0" />
                                                 {product.name}
-                                            </a>
+                                            </Link>
                                         </h3>
                                     </div>
                                     <p className="mt-3 text-2xl font-semibold text-offblack text-center">{product.color}</p>

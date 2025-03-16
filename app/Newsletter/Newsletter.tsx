@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const Newsletter = () => {
     return (
@@ -18,15 +19,20 @@ const Newsletter = () => {
                     </div>
 
                     {/* COLUMN-2 */}
-                    <div className='hidden sm:block'>
-                        <div className='float-right -mt-32'>
-                            <img src={'/assets/newsletter/Free.svg'} alt="bgimg" />
-                        </div>
+                    <div className='float-right -mt-32'>
+                        <Image 
+                            src="/assets/newsletter/Free.svg"
+                            alt="newsletter illustration"
+                            width={500}
+                            height={400}
+                            className="w-full h-auto"
+                            priority
+                        />
+                    </div>
                     </div>
 
                 </div>
             </div>
-        </div>
     )
 }
 

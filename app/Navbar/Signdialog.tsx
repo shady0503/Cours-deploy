@@ -1,6 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { LockClosedIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 
 const Signin = () => {
@@ -110,9 +111,9 @@ const Signin = () => {
                                                     </div>
 
                                                     <div className="text-sm">
-                                                        <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                                                        <Link href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
                                                             Forgot your password?
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
 
