@@ -1,16 +1,17 @@
-import React from "react";
+import { CourseDetailsPage } from "@/app/components/CourseDetails";
+import { coursesData } from "@/data/coursesData";
 import { notFound } from "next/navigation";
-import { CourseDetailsPage } from "../../components/CourseDetails";
-import { coursesData } from "../../../data/coursesData";
 
 interface PageProps {
-  params: {
-    slug: string;
-  };
+  params: { slug: string } | Promise<{ slug: string }>;
 }
 
-export default function CoursePage({ params }: PageProps) {
-  const course = coursesData.find(course => course.slug === params.slug);
+export default async function CoursePage({ params }: PageProps) {
+  // If params is a Promise, await it; otherwise, use it directly.
+  const resolvedParams = params instanceof Promise ? await params : params;
+  const { slug } = resolvedParams;
+
+  const course = coursesData.find(course => course.slug === slug);
 
   if (!course) {
     notFound();

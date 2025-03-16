@@ -374,5 +374,4 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
   );
 });
 
-CourseDetailsPage.displayName = "CourseDetailsPage";
 
