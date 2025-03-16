@@ -1,17 +1,15 @@
-// /app/Courses/[slug]/page.tsx
-
 import React from "react";
 import { notFound } from "next/navigation";
 import { CourseDetailsPage } from "../../components/CourseDetails";
 import { coursesData } from "../../../data/coursesData";
 
-interface Params {
+interface PageProps {
   params: {
     slug: string;
-  }
+  };
 }
 
-export default function CoursePage({ params }: Params) {
+export default function CoursePage({ params }: PageProps) {
   const course = coursesData.find(course => course.slug === params.slug);
 
   if (!course) {
