@@ -3,13 +3,11 @@ import { coursesData } from "@/data/coursesData";
 import { notFound } from "next/navigation";
 
 interface PageProps {
-  params: { slug: string } | Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export default async function CoursePage({ params }: PageProps) {
-  // If params is a Promise, await it; otherwise, use it directly.
-  const resolvedParams = params instanceof Promise ? await params : params;
-  const { slug } = resolvedParams;
+  const { slug } = params;
 
   const course = coursesData.find(course => course.slug === slug);
 
