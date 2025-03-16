@@ -54,6 +54,7 @@ const SampleNextArrow = memo(function SampleNextArrow(props: any) {
     </div>
   );
 });
+SampleNextArrow.displayName = "SampleNextArrow";
 
 const SamplePrevArrow = memo(function SamplePrevArrow(props: any) {
   const { className, style, onClick } = props;
@@ -67,6 +68,7 @@ const SamplePrevArrow = memo(function SamplePrevArrow(props: any) {
     </div>
   );
 });
+SamplePrevArrow.displayName = "SamplePrevArrow";
 
 export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
   courseTitle,
@@ -85,7 +87,7 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
   const toggleFAQ = useCallback((index: number) => {
-    setOpenFAQ(prev => prev === index ? null : index);
+    setOpenFAQ(prev => (prev === index ? null : index));
   }, []);
 
   const sliderSettings = {
@@ -373,5 +375,6 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
     </div>
   );
 });
+CourseDetailsPage.displayName = "CourseDetailsPage";
 
-
+export default CourseDetailsPage;
