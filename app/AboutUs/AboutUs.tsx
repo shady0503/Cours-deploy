@@ -1,11 +1,12 @@
 'use client'
 import Link from "next/link";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const AboutUs: React.FC = () => {
   // Keep track of which video is currently selected
   const videos = [
-    { id: "dQw4w9WgXcQ", title: "Introduction de l'Atelier", duration: "4:12" },
+    { id: "dQw4w9WgXcQ", title: "Introduction de l&apos;Atelier", duration: "4:12" },
     { id: "LXb3EKWsInQ", title: "Aperçu de la Leçon", duration: "2:43" },
     { id: "CevxZvSJLk8", title: "Démonstration Pratique", duration: "3:55" },
     { id: "9bZkp7q19f0", title: "Histoires de Réussite", duration: "2:14" },
@@ -19,12 +20,12 @@ const AboutUs: React.FC = () => {
       {/* Hero Section */}
       <header className="relative overflow-hidden bg-bgpurple text-offwhite w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw]">
         <div className="max-w-7xl mx-auto px-4 py-20 sm:py-24 lg:py-32">
-            <h1 className="text-5xl sm:text-6xl font-bold">
+          <h1 className="text-5xl sm:text-6xl font-bold">
             Encourager les Jeunes Esprits en IA et Informatique
-            </h1>
-            <p className="mt-6 text-xl sm:text-2xl text-lightgrey">
-            Nous éveillons la curiosité et construisons l'avenir en enseignant aux enfants et adolescents les merveilles de la technologie.
-            </p>
+          </h1>
+          <p className="mt-6 text-xl sm:text-2xl text-lightgrey">
+            Nous éveillons la curiosit&eacute; et construisons l&apos;avenir en enseignant aux enfants et adolescents les merveilles de la technologie.
+          </p>
           <div className="mt-10">
             <Link href="#courses-section" className="inline-block bg-green text-white py-3 px-6 rounded-md text-lg">
               Voir Nos Cours
@@ -59,18 +60,18 @@ const AboutUs: React.FC = () => {
       {/* About Section */}
       <section id="about" className="py-16 bg-offwhite">
         <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-purple mb-6">Qui Nous Sommes</h2>
-
-            <p className="text-lg text-lightgrey leading-relaxed">
-            Fondée avec une passion pour la technologie et l'éducation, notre plateforme est dédiée à rendre l'IA et l'informatique accessibles aux jeunes apprenants. Nous combinons des expériences d'apprentissage interactives avec du contenu engageant pour éveiller la curiosité, inspirer la créativité et autonomiser la prochaine génération d'innovateurs.
-            </p>
+          <h2 className="text-4xl font-bold text-purple mb-6">Qui Nous Sommes</h2>
+          <p className="text-lg text-lightgrey leading-relaxed">
+            Fond&eacute;e avec une passion pour la technologie et l&apos;&eacute;ducation, notre plateforme est d&eacute;di&eacute;e &agrave; rendre l&apos;IA et l&apos;informatique accessibles aux jeunes apprenants. Nous combinons des exp&eacute;riences d&apos;apprentissage interactives avec du contenu engageant pour &eacute;veiller la curiosit&eacute;, inspirer la cr&eacute;ativit&eacute; et autonomiser la prochaine g&eacute;n&eacute;ration d&apos;innovateurs.
+          </p>
         </div>
         {/* Decorative Blob */}
         <div className="relative w-full h-[32rem] md:h-[36rem] lg:h-[40rem]">
-          <img
+          <Image
             src="/assets/About/software-engineer.svg"
             alt="Decorative software engineer illustration"
-            className="w-full h-full object-contain"
+            fill
+            className="object-contain"
           />
         </div>
       </section>
@@ -79,9 +80,9 @@ const AboutUs: React.FC = () => {
       <section className="py-16 bg-lightpink">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-purple mb-6">Nos Mission</h2>
-            <p className="text-lg text-offblack leading-relaxed">
-            Notre mission est de rendre l'éducation technologique amusante et accessible. Nous démystifions les concepts d'IA et d'informatique en intégrant des projets interactifs, des exemples concrets et une résolution créative de problèmes dans chaque leçon. Que vous soyez débutant ou que vous ayez déjà de l'expérience, notre plateforme s'adapte aux différents styles d'apprentissage pour inspirer confiance et innovation.
-            </p>
+          <p className="text-lg text-offblack leading-relaxed">
+            Notre mission est de rendre l&apos;&eacute;ducation technologique amusante et accessible. Nous d&eacute;mystifions les concepts d&apos;IA et d&apos;informatique en int&eacute;grant des projets interactifs, des exemples concrets et une r&eacute;solution cr&eacute;ative de probl&egrave;mes dans chaque le&ccedil;on. Que vous soyez d&eacute;butant ou que vous ayez d&eacute;j&agrave; de l&apos;exp&eacute;rience, notre plateforme s&apos;adapte aux diff&eacute;rents styles d&apos;apprentissage pour inspirer confiance et innovation.
+          </p>
           <div className="mt-8">
             <svg className="w-full h-24" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -99,24 +100,24 @@ const AboutUs: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-purple mb-6">Nos Valeurs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="p-6 border border-grey500 rounded-lg">
-          <h3 className="text-2xl font-semibold text-offblack mb-4">Innovation</h3>
-          <p className="text-lg text-lightgrey">
-            Nous inspirons la créativité en encourageant nos étudiants à explorer de nouvelles idées et à remettre en question la pensée conventionnelle.
-          </p>
-        </div>
-        <div className="p-6 border border-grey500 rounded-lg">
-          <h3 className="text-2xl font-semibold text-offblack mb-4">Inclusivité</h3>
-          <p className="text-lg text-lightgrey">
-            Nos cours sont conçus pour tous. Nous croyons que chaque enfant devrait avoir la possibilité d'apprendre et de réussir.
-          </p>
-        </div>
-        <div className="p-6 border border-grey500 rounded-lg">
-          <h3 className="text-2xl font-semibold text-offblack mb-4">Autonomisation</h3>
-          <p className="text-lg text-lightgrey">
-            Nous équipons les jeunes esprits avec les connaissances et les compétences nécessaires pour devenir les futurs leaders en technologie.
-          </p>
-        </div>
+            <div className="p-6 border border-grey500 rounded-lg">
+              <h3 className="text-2xl font-semibold text-offblack mb-4">Innovation</h3>
+              <p className="text-lg text-lightgrey">
+                Nous inspirons la cr&eacute;ativit&eacute; en encourageant nos &eacute;tudiants &agrave; explorer de nouvelles id&eacute;es et &agrave; remettre en question la pens&eacute;e conventionnelle.
+              </p>
+            </div>
+            <div className="p-6 border border-grey500 rounded-lg">
+              <h3 className="text-2xl font-semibold text-offblack mb-4">Inclusivit&eacute;</h3>
+              <p className="text-lg text-lightgrey">
+                Nos cours sont con&ccedil;us pour tous. Nous croyons que chaque enfant devrait avoir la possibilit&eacute; d&apos;apprendre et de r&eacute;ussir.
+              </p>
+            </div>
+            <div className="p-6 border border-grey500 rounded-lg">
+              <h3 className="text-2xl font-semibold text-offblack mb-4">Autonomisation</h3>
+              <p className="text-lg text-lightgrey">
+                Nous &eacute;quipons les jeunes esprits avec les connaissances et les comp&eacute;tences n&eacute;cessaires pour devenir les futurs leaders en technologie.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -126,16 +127,17 @@ const AboutUs: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-purple mb-6">Notre Parcours</h2>
           <p className="text-lg text-offblack leading-relaxed">
-        Ce qui a commencé comme une petite initiative communautaire s'est transformé en un mouvement national. Depuis notre premier atelier interactif jusqu'au lancement d'un programme complet sur l'IA et l'informatique, chaque étape a été motivée par notre engagement inébranlable à inspirer et éduquer. Nous célébrons chaque étape franchie et nous nous réjouissons de créer encore plus d'opportunités pour les jeunes apprenants.
+            Ce qui a commenc&eacute; comme une petite initiative communautaire s&apos;est transform&eacute; en un mouvement national. Depuis notre premier atelier interactif jusqu&apos;au lancement d&apos;un programme complet sur l&apos;IA et l&apos;informatique, chaque &eacute;tape a &eacute;t&eacute; motiv&eacute;e par notre engagement in&eacute;branlable &agrave; inspirer et &eacute;duquer. Nous c&eacute;l&eacute;brons chaque &eacute;tape franchie et nous nous r&eacute;jouissons de cr&eacute;er encore plus d&apos;opportunit&eacute;s pour les jeunes apprenants.
           </p>
           <div className="mt-8">
-        <div className="relative w-full h-[32rem] md:h-[36rem] lg:h-[40rem]">
-          <img
-            src="/assets/About/Customer Journey Graph.png"
-            alt="Visualisation de notre parcours"
-            className="w-full h-full object-contain"
-          />
-        </div>
+            <div className="relative w-full h-[32rem] md:h-[36rem] lg:h-[40rem]">
+              <Image
+                src="/assets/About/Customer Journey Graph.png"
+                alt="Visualisation de notre parcours"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -146,77 +148,77 @@ const AboutUs: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12 md:gap-24">
           {/* Video & Heading Section */}
           <div className="w-full md:w-3/5">
-        <header className="mb-10">
-          <h2 className="text-5xl font-bold text-white mb-3">
-            Nos Ateliers & Leçons
-          </h2>
-          <p className="text-xl text-white opacity-80">
-            5 vidéos sélectionnées pour découvrir notre incroyable parcours
-          </p>
-        </header>
-        <div className="transition-all duration-500 ease-in-out">
-            <div
-            className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-2xl"
-            style={{
-          boxShadow: "0 15px 40px rgba(0, 0, 0, 0.4)",
-          transform: "translateZ(0)",
-          border: "3px solid rgba(255, 255, 255, 0.1)",
-            }}
-            >
-            <iframe
-          key={selectedVideo}
-          className="absolute top-0 left-0 w-full h-full"
-          src={`https://www.youtube.com/embed/${selectedVideo}?rel=0`}
-          title="Ateliers & Leçons"
-          frameBorder="0"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-            />
+            <header className="mb-10">
+              <h2 className="text-5xl font-bold text-white mb-3">
+                Nos Ateliers &amp; Le&ccedil;ons
+              </h2>
+              <p className="text-xl text-white opacity-80">
+                5 vid&eacute;os s&eacute;lectionn&eacute;es pour d&eacute;couvrir notre incroyable parcours
+              </p>
+            </header>
+            <div className="transition-all duration-500 ease-in-out">
+              <div
+                className="relative pb-[56.25%] h-0 rounded-xl overflow-hidden shadow-2xl"
+                style={{
+                  boxShadow: "0 15px 40px rgba(0, 0, 0, 0.4)",
+                  transform: "translateZ(0)",
+                  border: "3px solid rgba(255, 255, 255, 0.1)",
+                }}
+              >
+                <iframe
+                  key={selectedVideo}
+                  className="absolute top-0 left-0 w-full h-full"
+                  src={`https://www.youtube.com/embed/${selectedVideo}?rel=0`}
+                  title="Ateliers &amp; Le&ccedil;ons"
+                  frameBorder="0"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
             </div>
-        </div>
           </div>
 
           {/* Playlist Section */}
           <aside className="w-full md:w-2/5 bg-purple-900 rounded-xl overflow-hidden shadow-xl transition-all duration-300">
-        <div className="p-6 bg-gradient-to-r from-purple-800 to-purple-900">
-          <h3 className="text-2xl font-semibold text-white">
-            Nos Ateliers & Leçons
-          </h3>
-          <p className="text-white text-opacity-80 mt-1">
-            Une série de vidéos sélectionnées
-          </p>
-        </div>
-        <ul className="divide-y divide-purple-800/50">
-          {videos.map((video, index) => (
-            <li key={video.id}>
-          <button
-            onClick={() => setSelectedVideo(video.id)}
-            className={`flex items-center justify-between w-full p-5 text-left transition-all duration-300 ${selectedVideo === video.id
-            ? "bg-purple-700 shadow-inner"
-            : "hover:bg-purple-800"
-              }`}
-          >
-            <div className="flex items-center space-x-4">
-              <span
-            className={`flex items-center justify-center w-8 h-8 rounded-full font-medium ${selectedVideo === video.id
-                ? "bg-white text-purple-900"
-                : "bg-purple-700 text-white"
-              }`}
-              >
-            {index + 1}
-              </span>
-              <p className="text-white font-medium text-lg">
-            {video.title}
+            <div className="p-6 bg-gradient-to-r from-purple-800 to-purple-900">
+              <h3 className="text-2xl font-semibold text-white">
+                Nos Ateliers &amp; Le&ccedil;ons
+              </h3>
+              <p className="text-white text-opacity-80 mt-1">
+                Une s&eacute;rie de vid&eacute;os s&eacute;lectionn&eacute;es
               </p>
             </div>
-            <span className="text-white text-opacity-70">
-              {video.duration}
-            </span>
-          </button>
-            </li>
-          ))}
-        </ul>
+            <ul className="divide-y divide-purple-800/50">
+              {videos.map((video, index) => (
+                <li key={video.id}>
+                  <button
+                    onClick={() => setSelectedVideo(video.id)}
+                    className={`flex items-center justify-between w-full p-5 text-left transition-all duration-300 ${selectedVideo === video.id
+                      ? "bg-purple-700 shadow-inner"
+                      : "hover:bg-purple-800"
+                      }`}
+                  >
+                    <div className="flex items-center space-x-4">
+                      <span
+                        className={`flex items-center justify-center w-8 h-8 rounded-full font-medium ${selectedVideo === video.id
+                          ? "bg-white text-purple-900"
+                          : "bg-purple-700 text-white"
+                          }`}
+                      >
+                        {index + 1}
+                      </span>
+                      <p className="text-white font-medium text-lg">
+                        {video.title}
+                      </p>
+                    </div>
+                    <span className="text-white text-opacity-70">
+                      {video.duration}
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
           </aside>
         </div>
 
@@ -224,8 +226,6 @@ const AboutUs: React.FC = () => {
         <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-700 rounded-full opacity-20 blur-3xl" />
         <div className="absolute top-20 -right-32 w-80 h-80 bg-indigo-600 rounded-full opacity-10 blur-3xl" />
       </section>
-
-
     </div>
   );
 };
