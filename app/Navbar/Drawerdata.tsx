@@ -11,12 +11,12 @@ interface NavigationItem {
 }
 
 export const navigation: NavigationItem[] = [
-  { name: 'Home',       href: '/',                  current: true  },
-  { name: 'About Us',   href: '/#about-section',    current: false },
-  { name: 'Courses',    href: '/#courses-section',   current: false },
-  { name: 'Mentors',    href: '/#mentors-section',  current: false },
-  { name: 'Students',   href: '/#students-section', current: false },
-  { name: 'Contact Us', href: '/#contact-section',  current: false },
+  { name: 'Accueil',     href: '/',                  current: true  },
+  { name: 'À Propos',    href: '/#about-section',    current: false },
+  { name: 'Cours',       href: '/#courses-section',   current: false },
+  // { name: 'Mentors',   href: '/#mentors-section',  current: false },
+  { name: 'Étudiants',   href: '/#students-section', current: false },
+  { name: 'Contact',     href: '/#contact-section',  current: false },
 ]
 
 function classNames(...classes: string[]) {
@@ -43,7 +43,7 @@ const Data = () => {
               </Link>
             ))}
             <div className="mt-6 flex flex-col items-center space-y-2">
-              {/* Phone Number */}
+              {/* Numéro de téléphone */}
               <a
                 href="tel:0669498768"
                 className="text-xl font-semibold text-black hover:text-purple"
@@ -51,7 +51,7 @@ const Data = () => {
                 06 69 49 87 68
               </a>
 
-              {/* Social Media Icons */}
+              {/* Icônes des réseaux sociaux */}
               <div className="flex space-x-4">
                 <a
                   href="https://wa.me/33669498768"

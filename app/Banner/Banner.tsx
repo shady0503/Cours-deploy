@@ -12,10 +12,10 @@ const Banner = () => {
                 <div className="mx-auto max-w-5xl pt-16 sm:pt-40 sm:pb-24">
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px">
-                            Advance your engineering <br /> skills with our courses
+                            Améliorez vos compétences en ingénierie <br /> avec nos cours
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-black">
-                            Build skills with our courses and mentor from world-class companies.
+                            Développez vos compétences avec nos cours et mentors
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <div className="hidden sm:block -space-x-2 overflow-hidden">
@@ -25,7 +25,7 @@ const Banner = () => {
                                     alt=""
                                 />
                             </div>
-                            <div className='bannerBorder sm:pl-8'>
+                            {/* <div className='bannerBorder sm:pl-8'>
                                 <div className='flex justify-center sm:justify-start'>
                                     <h3 className='text-2xl font-semibold mr-2'>4.6</h3>
                                     <div className="relative w-24 h-6">
@@ -40,7 +40,7 @@ const Banner = () => {
                                 <div>
                                     <h3 className='text-sm'>Rated by 25k on google.</h3>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 
@@ -52,13 +52,13 @@ const Banner = () => {
                             href="/#about-section" 
                             className="px-8 py-3 text-base font-medium text-white bg-purple rounded-lg hover:bg-purple-700 transition-colors"
                         >
-                            About Us
+                            À propos de nous
                         </Link>
                         <Link
                             href="/#contact-section" 
                             className="px-8 py-3 text-base font-medium text-purple border border-purple rounded-lg hover:bg-purple hover:text-white transition-colors"
                         >
-                            Get in Touch
+                            Contactez-nous
                         </Link>
                     </div>
                     {/* <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 bg-white rounded-lg boxshadow">

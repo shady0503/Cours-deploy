@@ -14,12 +14,12 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'About Us', href: '/#about-section', current: false },
-    { name: 'Courses', href: '/#courses-section', current: false },
-    { name: 'Mentors', href: '/#mentors-section', current: false },
-    { name: 'Students', href: '/#students-section', current: false },
-    { name: 'Contact Us', href: '/#contact-section', current: false },
+    { name: 'Accueil', href: '/', current: true },
+    { name: 'À propos de nous', href: '/#about-section', current: false },
+    { name: 'Cours', href: '/#courses-section', current: false },
+    // { name: 'Mentors', href: '/#mentors-section', current: false },
+    { name: 'Étudiants', href: '/#students-section', current: false },
+    { name: 'Contactez-nous', href: '/#contact-section', current: false },
 ]
 
 
@@ -31,7 +31,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <Disclosure as="nav" className="bg-lightpink w-full">
+        <Disclosure as="nav" className=" w-full fixed z-20 bg-grey500">
             <>
                 {/* Top bar (logo, links, phone, social icons) */}
                 <div className="flex items-center justify-between h-20 px-4 ml-36">
@@ -108,7 +108,9 @@ const Navbar = () => {
                 </div>
 
                 {/* Drawer for Mobile (shows up when isOpen = true) */}
-                <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                <Drawer isOpen={isOpen} setIsOpen={setIsOpen}
+                
+                >
                     <Drawerdata />
                 </Drawer>
             </>

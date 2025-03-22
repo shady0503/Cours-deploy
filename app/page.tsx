@@ -1,6 +1,5 @@
 import Banner from './Banner/Banner';
 import Companies from './Companies/Companies';
-import Tabs from './Courses/Courses';
 import Mentor from './Mentor/Mentor';
 import Students from './Students/Students';
 import Newsletter from './Newsletter/Newsletter';
@@ -15,7 +14,7 @@ export default function Home() {
       <Banner />
       <AboutUs></AboutUs>
       <NamesList />
-      <Mentor />
+      {/* <Mentor /> */}
       <Students />
       <ContactSection />
     </main>

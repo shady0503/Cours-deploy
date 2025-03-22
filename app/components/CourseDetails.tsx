@@ -343,8 +343,8 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
           </h2>
           <div className="space-y-6">
             {faqItems.map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white border-l-4 border-purple rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
               >
                 <button
@@ -360,10 +360,9 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
                     )}
                   </span>
                 </button>
-                <div 
-                  className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${
-                    openFAQ === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                <div
+                  className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openFAQ === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 >
                   <p className="text-gray-600 leading-relaxed">{item.answer}</p>
                 </div>
