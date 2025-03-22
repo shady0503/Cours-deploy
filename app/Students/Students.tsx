@@ -90,7 +90,7 @@ export default class MultipleItems extends Component {
                         <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-purple my-4">Ce que disent nos <br /> étudiants satisfaits</h2>
                     </div>
 
-                    <p className='text-lg font-medium pb-12'>Développez vos compétences avec nos cours et mentors d'entreprises de classe mondiale.</p>
+                    <p className='text-lg font-medium pb-12'>Développez vos compétences avec nos cours et mentors d&apos;entreprises de classe mondiale.</p>
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
