@@ -9,7 +9,9 @@ import NamesList from './components/NamesList';
 
 export default function Home() {
   return (
-    <main>
+    <main
+    className='overflow-x-hidden pt-12'
+    >
       {/* <Companies /> */}
       <Banner />
       <AboutUs></AboutUs>
