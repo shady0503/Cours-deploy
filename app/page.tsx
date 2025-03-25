@@ -15,7 +15,7 @@ export default function Home() {
       <AboutUs></AboutUs>
       <NamesList />
       {/* <Mentor /> */}
-      <Students />
+      {/* <Students /> */}
       <ContactSection />
     </main>
   )

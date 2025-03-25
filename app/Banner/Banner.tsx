@@ -50,7 +50,7 @@ const Banner = () => {
                     <div className="flex flex-col sm:flex-row justify-center mt-10 gap-4">
                         <Link
                             href="/#about-section" 
-                            className="px-8 py-3 text-base font-medium text-white bg-purple rounded-lg hover:bg-purple-700 transition-colors"
+                            className="px-8 py-3 text-base font-medium text-white bg-purple rounded-lg  transition-colors"
                         >
                             À propos de nous
                         </Link>

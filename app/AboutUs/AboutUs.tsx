@@ -123,7 +123,7 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* Journey Section */}
-      <section className="py-16 bg-lightpink">
+      {/* <section className="py-16 bg-lightpink">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-purple mb-6">Notre Parcours</h2>
           <p className="text-lg text-offblack leading-relaxed">
@@ -140,13 +140,12 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section
+      {/* <section
         className="relative overflow-hidden bg-bgpurple text-offwhite w-screen left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] py-20"
       >
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12 md:gap-24">
-          {/* Video & Heading Section */}
           <div className="w-full md:w-3/5">
             <header className="mb-10">
               <h2 className="text-5xl font-bold text-white mb-3">
@@ -179,7 +178,6 @@ const AboutUs: React.FC = () => {
             </div>
           </div>
 
-          {/* Playlist Section */}
           <aside className="w-full md:w-2/5 bg-purple-900 rounded-xl overflow-hidden shadow-xl transition-all duration-300">
             <div className="p-6 bg-gradient-to-r from-purple-800 to-purple-900">
               <h3 className="text-2xl font-semibold text-white">
@@ -222,10 +220,9 @@ const AboutUs: React.FC = () => {
           </aside>
         </div>
 
-        {/* Decorative background elements */}
         <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-700 rounded-full opacity-20 blur-3xl" />
         <div className="absolute top-20 -right-32 w-80 h-80 bg-indigo-600 rounded-full opacity-10 blur-3xl" />
-      </section>
+      </section> */}
     </div>
   );
 };

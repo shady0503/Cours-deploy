@@ -19,7 +19,7 @@ const MinimalFooter = () => {
         <p className="text-center text-sm mb-4">
           Si vous avez des questions ou des suggestions,&nbsp;
           <Link
-            href="https://wa.me/33669498768"
+            href="https://wa.me/212672941912"
             className="underline hover:text-gray-200"
             target="_blank"
             rel="noopener noreferrer"
@@ -27,14 +27,14 @@ const MinimalFooter = () => {
             écrivez-nous sur WhatsApp
           </Link>
           &nbsp;ou téléphonez-nous au&nbsp;
-          <Link href="tel:0669498768" className="underline hover:text-gray-200">
-            06 69 49 87 68
+          <Link href="tel:212682381191" className="underline hover:text-gray-200">
+          0682381191  
           </Link>
         </p>
 
         {/* Social icons */}
         <div className="flex space-x-4 mb-4">
-          <Link
+          {/* <Link
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,9 +49,9 @@ const MinimalFooter = () => {
             className="hover:text-pink-400"
           >
             <FaInstagram size={20} />
-          </Link>
+          </Link> */}
           <Link
-            href="https://wa.me/33669498768"
+            href="https://wa.me/21262941912"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-green-400"
@@ -69,7 +69,7 @@ const MinimalFooter = () => {
             Politique et protection des données personnelles
           </Link>
           <span className="text-sm">
-            © 2023-2025 Shady
+            © 2024-2025 Shady
           </span>
         </div>
       </div>

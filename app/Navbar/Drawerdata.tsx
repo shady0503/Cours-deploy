@@ -15,7 +15,7 @@ export const navigation: NavigationItem[] = [
   { name: 'À Propos',    href: '/#about-section',    current: false },
   { name: 'Cours',       href: '/#courses-section',   current: false },
   // { name: 'Mentors',   href: '/#mentors-section',  current: false },
-  { name: 'Étudiants',   href: '/#students-section', current: false },
+  // { name: 'Étudiants',   href: '/#students-section', current: false },
   { name: 'Contact',     href: '/#contact-section',  current: false },
 ]
 
@@ -34,7 +34,7 @@ const Data = () => {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? 'bg-gray-900 text-purple' : 'text-black hover:bg-gray-700 hover:text-purple',
+                  item.current ? 'text-purple' : ' hover:text-bgpurple',
                   'block  py-2 rounded-md text-base font-medium'
                 )}
                 aria-current={item.current ? 'page' : undefined}
@@ -42,26 +42,25 @@ const Data = () => {
                 {item.name}
               </Link>
             ))}
-            <div className="mt-6 flex flex-col items-center space-y-2">
+            <div className="mt-6 flex flex-col space-y-2">
               {/* Numéro de téléphone */}
-              <a
-                href="tel:0669498768"
-                className="text-xl font-semibold text-black hover:text-purple"
-              >
-                06 69 49 87 68
-              </a>
 
               {/* Icônes des réseaux sociaux */}
-              <div className="flex space-x-4">
-                <a
+              <div className="">
+                <Link
                   href="https://wa.me/33669498768"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-green-500"
+                  className="text-gray-700 hover:text-green-500 flex gap-4 mt-2"
                 >
                   <FaWhatsapp size={24} />
-                </a>
-                <a
+                  <span
+                    className="hover:text-green-500"
+                  >
+                    Whatsapp
+                  </span>
+                </Link>
+                {/* <a
                   href="https://instagram.com/your-instagram"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -76,7 +75,7 @@ const Data = () => {
                   className="text-gray-700 hover:text-blue-600"
                 >
                   <FaFacebookF size={24} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

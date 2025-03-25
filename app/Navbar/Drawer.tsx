@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import Image from "next/image";
 
 interface DrawerProps {
     children: ReactNode;
@@ -19,23 +20,36 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
             }
         >
             <section
-        className={
-            "w-340px max-w-lg left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
-            (isOpen ? "translate-x-0" : "-translate-x-full")
-        }
-    >
- 
+                className={
+                    "w-340px max-w-lg left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
+                    (isOpen ? "translate-x-0" : "-translate-x-full")
+                }
+            >
+
                 <article className="relative w-340px max-w-lg pb-10 flex flex-col space-y-6 h-full">
-                    <header className="p-4 flex items-center"><img
-                        className="h-30px w-30px mx-auto"
-                        src={"/assets/logo/Logo.svg"}
-                        alt="Courses-Logo"
-                        onClick={() => {
-                            setIsOpen(false);
-                        }}
-                    /><XMarkIcon className="block h-6 w-6" onClick={() => {
-                        setIsOpen(false);
-                    }} />
+                    <header className="p-4 flex items-center">
+                        <div
+                            className="flex items-center space-x-2 cursor-pointer gap-3 mx-auto">
+                            <Image
+                                width={48}
+                                height={48}
+                                className=" w-12 h-12
+                            mx-auto"
+                                src={"/assets/banner/programming-monitor-svgrepo-com.svg"}
+                                alt="Courses-Logo"
+                                onClick={() => {
+                                    setIsOpen(false);
+                                }}
+                            />
+                            <span>
+                            Smart <span
+                                className="text-purple font-serif italic">
+                                Programmers</span>
+                            </span>
+                                </div>
+                                <XMarkIcon className="block h-6 w-6 text-purple" onClick={() => {
+                                    setIsOpen(false);
+                                }} />
                     </header>
                     <div onClick={() => {
                         setIsOpen(false);

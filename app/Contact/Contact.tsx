@@ -14,7 +14,7 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-purple mb-3">
             Contactez-nous
           </h2>
-          <div className="w-20 h-1 bg-purple-600 mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-purple mx-auto mb-4"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Vous avez des questions ou souhaitez travailler ensemble ? Nous serions ravis de vous entendre !
           </p>
@@ -25,7 +25,7 @@ const ContactSection = () => {
           <div className="relative w-full" style={{ height: "300px" }}>
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.712856051413!2d-77.03653078465786!3d38.89767697957016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6952c19e6637d%3A0x3f12d3bdc77cb5!2s1600%20Pennsylvania%20Ave%2C%20Washington%20DC!5e0!3m2!1sen!2sus!4v1635927303152!5m2!1sen!2sus"
+              src="https://www.google.com/maps?q=Adresse%20N%C2%B0%2002%2C%201er%20%C3%A9tage%2C%20Immeuble%20N%C2%B0%2027%20Sis%20Av%20Al%20Atlas%20Rabat&output=embed"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -36,7 +36,7 @@ const ContactSection = () => {
         {/* Contact details */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {/* Phone Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600">
+          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -48,17 +48,17 @@ const ContactSection = () => {
             <h4 className="text-xl font-bold mb-3 text-purple">Téléphone</h4>
             <p className="text-gray-600 text-lg font-medium hover:text-purple-600 transition-colors">
               <Link
-                href="https://wa.me/11234567890"
+                href="https://wa.me/212672941912"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                (123) 456-7890
+                0682381191  &amp;  0672941912 (WhatsApp)
               </Link>
             </p>
           </div>
 
           {/* Email Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600">
+          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -70,17 +70,17 @@ const ContactSection = () => {
             <h4 className="text-xl font-bold mb-3 text-purple">Email</h4>
             <p className="text-gray-600 text-lg font-medium hover:text-purple-600 transition-colors">
               <Link
-                href="mailto:info@example.com"
+                href="mailto:instituteilead3@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                info@example.com
+                instituteilead3@gmail.com
               </Link>
             </p>
           </div>
 
           {/* Address Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600">
+          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -96,11 +96,11 @@ const ContactSection = () => {
             <h4 className="text-xl font-bold mb-3 text-purple">Adresse</h4>
             <p className="text-gray-600 text-lg font-medium hover:text-purple-600 transition-colors">
               <Link
-                href="https://www.google.com/maps/search/?api=1&query=1600+Pennsylvania+Ave,+Washington+DC"
+                href="https://www.google.com/maps/search/?api=1&query=Adresse%20N%C2%B0%2002%2C%201er%20%C3%A9tage%2C%20Immeuble%20N%C2%B0%2027%20Sis%20Av%20Al%20Atlas%20Rabat"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                1600 Pennsylvania Ave, Washington DC
+                Adresse N° 02, 1er étage, Immeuble N° 27 Sis Av Al Atlas Rabat
               </Link>
             </p>
           </div>

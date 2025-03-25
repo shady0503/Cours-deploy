@@ -120,10 +120,9 @@ const CoursesSlider = () => {
   return (
     <section
       id="courses-section"
-      className="mx-auto max-w-7xl py-12 px-4 sm:py-24 sm:px-6 lg:px-8"
-    >
+      className="mx-auto max-w-2xl pb-16 px-4 sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8"    >
       <div className="sm:flex justify-between items-center pb-8 md:pb-12">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 my-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-purple my-4">
           Cours Populaires
         </h2>
       </div>
