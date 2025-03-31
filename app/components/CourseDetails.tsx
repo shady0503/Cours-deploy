@@ -67,6 +67,7 @@ const SamplePrevArrow = memo(function SamplePrevArrow(props: any) {
       <ChevronLeftIcon className="w-6 h-6 text-purple" />
     </div>
   );
+
 });
 SamplePrevArrow.displayName = "SamplePrevArrow";
 
@@ -205,7 +206,7 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
       </section>
 
       {/* SLIDER SECTION */}
-      <section className="bg-gradient-to-b from-gray-500 to-white py-20 px-4 sm:px-6 lg:px-8 my-8">
+      {/* <section className="bg-gradient-to-b from-gray-500 to-white py-20 px-4 sm:px-6 lg:px-8 my-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-600 mb-16 text-center relative">
             <span className="relative inline-block after:content-[''] text-purple after:absolute after:w-24 after:h-1 after:bg-orange-500 after:bottom-[-12px] after:left-1/2 after:transform after:-translate-x-1/2">
@@ -312,7 +313,7 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
             }
           `}</style>
         </div>
-      </section>
+      </section> */}
 
       {/* TIMELINE SECTION */}
       <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -351,7 +352,7 @@ export const CourseDetailsPage: React.FC<CourseDetailsProps> = memo(({
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center px-6 py-5 text-left text-lg font-medium focus:outline-none"
                 >
-                  <span className="flex-1 pr-4 text-purple-800">{item.question}</span>
+                  <span className="flex-1 pr-4 text-purple">{item.question}</span>
                   <span className={`bg-purple-50 rounded-full p-1 transition-transform duration-300 ${openFAQ === index ? 'rotate-180' : ''}`}>
                     {openFAQ === index ? (
                       <ChevronUpIcon className="w-5 h-5 text-purple" />

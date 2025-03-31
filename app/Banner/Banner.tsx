@@ -3,84 +3,61 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
-
 const Banner = () => {
     return (
-        <main className='banner-image'>
-            <div className="relative px-6 lg:px-8">
-                <div className="mx-auto max-w-5xl pt-16 sm:pt-40 sm:pb-24">
-                    <div className="text-center">
-                        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-75px md:4px">
-                            Améliorez vos compétences en ingénierie <br /> avec nos cours
-                        </h1>
-                        <p className="mt-6 text-lg leading-8 text-black">
-                            Développez vos compétences avec nos cours et mentors
-                        </p>
-                        <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <div className="hidden sm:block -space-x-2 overflow-hidden">
-                                <img
-                                    className="inline-block h-24 w-24"
-                                    src="assets/banner/programming-monitor-svgrepo-com.svg"
-                                    alt=""
-                                />
-                            </div>
-                            {/* <div className='bannerBorder sm:pl-8'>
-                                <div className='flex justify-center sm:justify-start'>
-                                    <h3 className='text-2xl font-semibold mr-2'>4.6</h3>
-                                    <div className="relative w-24 h-6">
-                                        <Image
-                                            src='/assets/banner/Stars.svg'
-                                            alt="stars-icon"
-                                            fill
-                                            style={{ objectFit: 'contain' }}
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <h3 className='text-sm'>Rated by 25k on google.</h3>
-                                </div>
-                            </div> */}
-                        </div>
-                    </div>
-
-
-                    {/* DROPDOWN BUTTONS */}
-
-                    <div className="flex flex-col sm:flex-row justify-center mt-10 gap-4">
-                        <Link
-                            href="/#about-section" 
-                            className="px-8 py-3 text-base font-medium text-white bg-purple rounded-lg  transition-colors"
-                        >
-                            À propos de nous
-                        </Link>
-                        <Link
-                            href="/#contact-section" 
-                            className="px-8 py-3 text-base font-medium text-purple border border-purple rounded-lg hover:bg-purple hover:text-white transition-colors"
-                        >
-                            Contactez-nous
-                        </Link>
-                    </div>
-                    {/* <div className="mx-auto max-w-4xl mt-24 pt-6 pb-8 px-6 lg:max-w-4xl lg:px-8 bg-white rounded-lg boxshadow">
-                        <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-8 xl:gap-x-8">
-                            <div className="col-span-3">
-                                <Dropdownone />
-                            </div>
-                            <div className="col-span-3">
-                                <Dropdowntwo />
-                            </div>
-                            <div className="col-span-3 sm:col-span-2 mt-2">
-                                <button className="bg-purple w-full hover:bg-pruple text-white font-bold py-4 px-3 rounded">
-                                    Start
-                                </button>
-                            </div>
-                        </div>
-                    </div> */}
-
+        <main className="relative flex flex-col lg:flex-row bg-white overflow-hidden min-h-[600px]">
+            {/* Left content area - taking 45% on desktop */}
+            <div className="w-full lg:w-[45%] px-8 py-16 lg:px-16 lg:py-20 flex flex-col items-center text-center justify-center z-10 bg-gradient-to-br from-white to-[#f8f9fa]">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                    Améliorez vos compétences en ingénierie avec nos cours
+                </h1>
+                
+                <p className="mt-6 text-lg text-gray-700">
+                    Développez vos compétences avec nos cours et mentors
+                </p>
+                
+                <div className="mt-8">
+                    <img
+                        src="/assets/banner/programming-monitor-svgrepo-com.svg"
+                        alt="Programming icon"
+                        className="h-16 w-auto"
+                    />
+                </div>
+                
+                <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                    <Link 
+                        href="/#about-section"
+                        className="px-8 py-3 bg-purple text-white font-medium rounded-lg text-center transition-colors hover:bg-purple-700"
+                    >
+                        À propos de nous
+                    </Link>
+                    <Link 
+                        href="/#contact-section"
+                        className="px-8 py-3 border border-purple-800 text-purple font-medium rounded-lg text-center transition-colors hover:bg-purple hover:text-white"
+                    >
+                        Contactez-nous
+                    </Link>
+                </div>
+            </div>
+            
+            {/* Right image area - with manual positioning and higher container */}
+            <div className="w-full lg:w-[55%] h-80 md:h-96 lg:h-auto relative overflow-hidden">
+                <div className="absolute inset-0 top-20"> {/* Negative top margin to reveal more of the top */}
+                    <Image
+                        src="/assets/banner/image.jpg"
+                        alt="Formation en programmation"
+                        width={800}
+                        height={600}
+                        priority
+                        className="object-cover"
+                    />
+                    
+                    {/* Gradient overlay for smooth transition */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent lg:from-white lg:via-white/30 lg:to-transparent"></div>
                 </div>
             </div>
         </main>
-    )
-}
+    );
+};
 
 export default Banner;

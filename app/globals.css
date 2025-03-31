@@ -38,13 +38,16 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  text-align: justify;
+}
 
 
-.banner-image {
-  background-image: url('/assets/banner/background.png');
+/* .banner-image {
+  background-image: url('/assets/banner/image.png');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 @media screen and (max-width: 640px) {
   .banner-image {
