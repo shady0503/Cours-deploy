@@ -36,7 +36,7 @@ const ContactSection = () => {
         {/* Contact details */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
           {/* Phone Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
+          <div className="p-8 bg-white rounded-xl  flex flex-col items-center justify-center shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -58,7 +58,7 @@ const ContactSection = () => {
           </div>
 
           {/* Email Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
+          <div className="p-8 bg-white rounded-xl flex flex-col items-center justify-center shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
@@ -70,17 +70,17 @@ const ContactSection = () => {
             <h4 className="text-xl font-bold mb-3 text-purple">Email</h4>
             <p className="text-gray-600 text-lg font-medium hover:text-purple-600 transition-colors">
               <Link
-                href="mailto:instituteilead3@gmail.com"
+                href="mailto:smartprogrammers@hotmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                instituteilead3@gmail.com
+                smartprogrammers@hotmail.com
               </Link>
             </p>
           </div>
 
           {/* Address Card */}
-          <div className="p-8 bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
+          <div className="p-8 bg-white flex flex-col items-center justify-center rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-r from-purple to-bgpurple text-white mb-6">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path

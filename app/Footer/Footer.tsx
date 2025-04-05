@@ -8,11 +8,11 @@ const MinimalFooter = () => {
         {/* Logo + Brand */}
         <div className="flex items-center space-x-4 mb-4">
           <img
-            src="/assets/logo/Logo.svg"
+            src="/assets/banner/programming-monitor-svgrepo-com.svg"
             alt="Algorithmics Logo"
             className="h-8"
           />
-          <span className="text-xl font-semibold">Shady</span>
+          <span className="text-xl font-semibold">Smart <span className='italic'>Programmers</span></span>
         </div>
 
         {/* Contact text */}
@@ -69,7 +69,7 @@ const MinimalFooter = () => {
             Politique et protection des données personnelles
           </Link>
           <span className="text-sm">
-            © 2024-2025 Shady
+            © 2024-2025 Smart Programmers. Tous droits réservés.
           </span>
         </div>
       </div>
